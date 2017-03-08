@@ -46,6 +46,9 @@ import java.util.ResourceBundle;
 
 import javax.portlet.ActionRequest;
 import javax.portlet.ActionResponse;
+import javax.portlet.EventPortlet;
+import javax.portlet.EventRequest;
+import javax.portlet.EventResponse;
 import javax.portlet.Portlet;
 import javax.portlet.PortletConfig;
 import javax.portlet.PortletContext;
@@ -69,9 +72,14 @@ import javax.xml.namespace.QName;
  * PortletTests_PortletConfig_ApiRender_event
  *
  */
-public class PortletTests_PortletConfig_ApiRender implements Portlet {
+public class PortletTests_PortletConfig_ApiRender implements EventPortlet, Portlet {
 
    private PortletConfig portletConfig = null;
+
+   @Override
+   public void processEvent(EventRequest eventRequest, EventResponse eventResponse) throws PortletException {
+      System.err.println("processEvent: Hello ...");
+   }
 
    @Override
    public void init(PortletConfig config) throws PortletException {

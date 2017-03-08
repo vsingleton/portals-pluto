@@ -66,7 +66,7 @@
       <page.file.final.name>pluto-portal-driver-config.xml</page.file.final.name>
 
       <!-- test.context.base context string used when addressing test pages. Used by module stylesheet -->
-      <test.context.base>pluto/portal/</test.context.base>
+      <test.context.base>group/portlet-tck/</test.context.base>
 
       <!-- test.list.xsl Name of stylesheet to combine test case lists from subproject -->
       <!-- test.list.dir location of finished xml file containing complete test case list -->
@@ -94,14 +94,21 @@
       <test.server.port>8080</test.server.port>
 
       <!-- Configuration of URL to login page -->
-      <test.server.login.url>http://${test.server.host}:${test.server.port}/pluto/portal/About Apache Pluto</test.server.login.url>
+      <test.server.login.url>http://${test.server.host}:${test.server.port}/group/portlet-tck</test.server.login.url>
 
       <!-- HTML field IDs and values for username & password to enable automatic  login -->
 	  <!-- User specified must be in 'tckuser' role. Please configure 'tckuser' role for the specified user in tomcat-users.xml -->
+<!--
       <test.server.username.id>j_username</test.server.username.id>
       <test.server.username>pluto</test.server.username>
       <test.server.password.id>j_password</test.server.password.id>
       <test.server.password>pluto</test.server.password>
+-->
+
+      <test.server.username.id>_com_liferay_login_web_portlet_LoginPortlet_login</test.server.username.id>
+      <test.server.username>test</test.server.username>
+      <test.server.password.id>_com_liferay_login_web_portlet_LoginPortlet_password</test.server.password.id>
+      <test.server.password>test</test.server.password>
 
       <!-- Specifies the browser to be used by selenium WebDriver for running the tests. -->
       <!-- Can be used with firefox or HTMLUnit without setting the test.browser.webDriver property. -->
@@ -112,7 +119,10 @@
       
       <!-- Lines commented out below illustrate how the chromedriver web driver can be configured -->
       <test.browser>chrome</test.browser>
-      <test.browser.webDriver>c:/ntutil/chromedriver.exe</test.browser.webDriver>
+      <test.browser.webDriver>/usr/local/bin/chromedriver</test.browser.webDriver>
+		<!-- this binary below is only used for configuring your chromium install for headless use -->
+		<test.browser.binary>/Users/apple/Downloads/chrome-mac/Chromium.app/Contents/MacOS/Chromium</test.browser.binary>
+      <!-- test.browser.webDriver>c:/ntutil/chromedriver.exe</test.browser.webDriver -->
       
       <!-- commented outline below shows configuration for the Internet Explorer driver -->
       <!-- test.browser.webDriver>C:\ntutil\IEDriverServer_x64_2.42.0\IEDriverServer.exe</test.browser.webDriver -->
@@ -217,9 +227,15 @@
          </dependency>
          <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-api</artifactId>
+            <version>2.53.1</version>
+            <scope>compile</scope>
+         </dependency>
+         <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>2.53.0</version>
-            <scope>test</scope>
+            <version>2.53.1</version>
+            <scope>compile</scope>
          </dependency>
          <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
@@ -227,6 +243,28 @@
             <version>2.21</version>
             <scope>test</scope>
          </dependency>
+
+<!-- other things necesary for HtmlUnit iaw: https://web.liferay.com/web/kyle.stiemann/blog/-/blogs/improving-test-performance-on-liferay#htmlunit -->
+
+<dependency>
+    <groupId>xml-apis</groupId>
+    <artifactId>xml-apis</artifactId>
+    <version>1.4.01</version>
+    <scope>compile</scope>
+</dependency>
+<dependency>
+    <groupId>org.eclipse.jetty.websocket</groupId>
+    <artifactId>websocket-client</artifactId>
+    <version>9.2.18.v20160721</version>
+    <scope>test</scope>
+</dependency>
+<dependency>
+    <groupId>org.apache.httpcomponents</groupId>
+    <artifactId>httpclient</artifactId>
+    <version>4.5.2</version>
+    <scope>test</scope>
+</dependency>
+
          <dependency>
             <groupId>com.codeborne</groupId>
             <artifactId>phantomjsdriver</artifactId>
