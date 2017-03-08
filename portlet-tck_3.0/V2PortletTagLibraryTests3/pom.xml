@@ -29,6 +29,13 @@
    <packaging>war</packaging>
 
    <dependencies>
+
+<dependency>
+    <groupId>org.apache.tomcat</groupId>
+    <artifactId>tomcat-juli</artifactId>
+    <version>8.0.38</version>
+</dependency>
+
       <dependency>
          <groupId>javax.portlet</groupId>
          <artifactId>portlet-api</artifactId>

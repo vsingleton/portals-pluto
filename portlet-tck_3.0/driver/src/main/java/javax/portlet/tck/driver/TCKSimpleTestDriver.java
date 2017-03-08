@@ -40,6 +40,7 @@ import org.junit.runners.Parameterized.Parameters;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
@@ -212,6 +213,7 @@ public class TCKSimpleTestDriver {
       dryrun = new Boolean(System.getProperty("test.dryrun"));
       timeout = ((str != null) && str.matches("\\d+")) ? Integer.parseInt(str) : 3; 
       String wd = System.getProperty("test.browser.webDriver");
+      String binary = System.getProperty("browser.binary");
 
       System.out.println("before class.");
       System.out.println("   Debug        =" + debug);
@@ -228,6 +230,7 @@ public class TCKSimpleTestDriver {
       System.out.println("   PasswordId   =" + passwordId);
       System.out.println("   Browser      =" + browser);
       System.out.println("   Driver       =" + wd);
+      System.out.println("   binary       =" + binary + " ... used for ChromeDriver only, for now");
 
       if (browser.equalsIgnoreCase("firefox")) {
          driver = new FirefoxDriver();
@@ -236,7 +239,12 @@ public class TCKSimpleTestDriver {
          driver = new InternetExplorerDriver();
       } else if (browser.equalsIgnoreCase("chrome")) {
          System.setProperty("webdriver.chrome.driver", wd);
-         driver = new ChromeDriver();
+         ChromeOptions options = new ChromeOptions();
+         options.setBinary(binary);
+         options.addArguments("--headless");
+         options.addArguments("--disable-infobars");
+         driver = new ChromeDriver(options);
+         System.out.println("!! option       = headless");
       } else if (browser.equalsIgnoreCase("phantomjs")) {
          DesiredCapabilities capabilities = DesiredCapabilities.phantomjs();
          capabilities.setJavascriptEnabled(true);

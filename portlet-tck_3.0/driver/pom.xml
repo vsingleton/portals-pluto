@@ -662,6 +662,10 @@
                            <value>${test.browser.webDriver}</value>
                         </property>
                         <property>
+                           <name>browser.binary</name>
+                           <value>${browser.binary}</value>
+                        </property>
+                        <property>
                            <name>test.module</name>
                            <value>${test.module}</value>
                         </property>
