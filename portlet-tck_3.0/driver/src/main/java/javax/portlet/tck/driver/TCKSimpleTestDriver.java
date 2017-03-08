@@ -81,7 +81,7 @@ public class TCKSimpleTestDriver {
     * @return  a Collection of test cases to run
     */
    @SuppressWarnings("rawtypes")
-   @Parameters
+   @Parameters (name = "{1}")
    public static Collection getTestList () {
       System.out.println("getTestList");
       testFile = System.getProperty("test.list.file");
@@ -237,7 +237,7 @@ public class TCKSimpleTestDriver {
       System.out.println("   PasswordId   =" + passwordId);
       System.out.println("   Browser      =" + browser);
       System.out.println("   Driver       =" + wd);
-      System.out.println("   binary       =" + binary + " ... used for ChromeDriver & FirefoxDriver only, for now");
+      System.out.println("   binary       =" + binary);
       System.out.println("   headless     =" + headless);
 
       if (browser.equalsIgnoreCase("firefox")) {
