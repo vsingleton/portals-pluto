@@ -112,7 +112,10 @@
       
       <!-- Lines commented out below illustrate how the chromedriver web driver can be configured -->
       <test.browser>chrome</test.browser>
-      <test.browser.webDriver>c:/ntutil/chromedriver.exe</test.browser.webDriver>
+      <test.browser.webDriver>/usr/bin/chromedriver</test.browser.webDriver>
+<!--
+-->
+      <!-- test.browser.webDriver>c:/ntutil/chromedriver.exe</test.browser.webDriver -->
       
       <!-- commented outline below shows configuration for the Internet Explorer driver -->
       <!-- test.browser.webDriver>C:\ntutil\IEDriverServer_x64_2.42.0\IEDriverServer.exe</test.browser.webDriver -->
@@ -224,9 +227,30 @@
          <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>htmlunit-driver</artifactId>
-            <version>2.21</version>
+            <version>2.24</version>
             <scope>test</scope>
          </dependency>
+
+<!-- other things necesary for HtmlUnit iaw: https://web.liferay.com/web/kyle.stiemann/blog/-/blogs/improving-test-performance-on-liferay#htmlunit -->
+<dependency>
+    <groupId>xml-apis</groupId>
+    <artifactId>xml-apis</artifactId>
+    <version>1.4.01</version>
+    <scope>compile</scope>
+</dependency>
+<dependency>
+    <groupId>org.eclipse.jetty.websocket</groupId>
+    <artifactId>websocket-client</artifactId>
+    <version>9.2.18.v20160721</version>
+    <scope>test</scope>
+</dependency>
+<dependency>
+    <groupId>org.apache.httpcomponents</groupId>
+    <artifactId>httpclient</artifactId>
+    <version>4.5.2</version>
+    <scope>test</scope>
+</dependency>
+
          <dependency>
             <groupId>com.codeborne</groupId>
             <artifactId>phantomjsdriver</artifactId>

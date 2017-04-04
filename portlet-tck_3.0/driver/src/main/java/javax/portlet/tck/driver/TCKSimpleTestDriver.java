@@ -29,6 +29,8 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
+import com.gargoylesoftware.htmlunit.BrowserVersion;
+
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -40,6 +42,7 @@ import org.junit.runners.Parameterized.Parameters;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
@@ -235,15 +238,19 @@ public class TCKSimpleTestDriver {
          System.setProperty("webdriver.ie.driver", wd);
          driver = new InternetExplorerDriver();
       } else if (browser.equalsIgnoreCase("chrome")) {
+ChromeOptions options = new ChromeOptions();
+options.addArguments("headless");
+options.addArguments("disable-infobars");
          System.setProperty("webdriver.chrome.driver", wd);
-         driver = new ChromeDriver();
+         driver = new ChromeDriver(options);
       } else if (browser.equalsIgnoreCase("phantomjs")) {
          DesiredCapabilities capabilities = DesiredCapabilities.phantomjs();
          capabilities.setJavascriptEnabled(true);
          capabilities.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, wd);
          driver = new PhantomJSDriver(capabilities);
       } else if (browser.equalsIgnoreCase("htmlUnit")) {
-        driver = new HtmlUnitDriver(true);
+         // driver = new HtmlUnitDriver(true);
+         driver = new CustomHtmlUnitDriver(BrowserVersion.CHROME, true);
       } else if (browser.equalsIgnoreCase("safari")) {
          driver = new SafariDriver();
       } else {
