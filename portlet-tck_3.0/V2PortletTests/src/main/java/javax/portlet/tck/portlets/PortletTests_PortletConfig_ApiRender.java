@@ -339,7 +339,7 @@ public class PortletTests_PortletConfig_ApiRender implements Portlet {
             V2PORTLETTESTS_PORTLETCONFIG_APIRENDER_GETCONTAINERRUNTIMEOPTIONS1);
       Map<String, String[]> runoption1 = portletConfig
             .getContainerRuntimeOptions();
-      if (runoption1.size() == 2) {
+      if (runoption1.size() > 1) {
          if (runoption1 != null && runoption1
                .containsKey("javax.portlet.servletDefaultSessionScope")) {
             tr11.setTcSuccess(true);
@@ -367,7 +367,7 @@ public class PortletTests_PortletConfig_ApiRender implements Portlet {
             .getContainerRuntimeOptions();
       String[] val5 = runoption2
             .get("javax.portlet.servletDefaultSessionScope");
-      if (runoption2.size() == 2) {
+      if (runoption2.size() > 1) {
          if (runoption2 != null
                && runoption2
                      .containsKey("javax.portlet.servletDefaultSessionScope")
@@ -394,7 +394,7 @@ public class PortletTests_PortletConfig_ApiRender implements Portlet {
             V2PORTLETTESTS_PORTLETCONFIG_APIRENDER_GETCONTAINERRUNTIMEOPTIONS3);
       Map<String, String[]> runoption3 = portletConfig
             .getContainerRuntimeOptions();
-      if (runoption3.size() == 2) {
+      if (runoption3.size() > 1) {
          if (runoption3 != null && !runoption3.equals("newruntimeoption")) {
             tr13.setTcSuccess(true);
          } else {
