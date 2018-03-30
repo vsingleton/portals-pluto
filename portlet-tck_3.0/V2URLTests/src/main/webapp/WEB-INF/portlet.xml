@@ -158,7 +158,15 @@
    <supported-public-render-parameter>tckPRP1</supported-public-render-parameter>
    </portlet>
 
-
+   <filter>
+      <filter-name>URLTests_LiferayRenderFilter</filter-name>
+      <filter-class>com.liferay.portlet.tck.extension.LiferayRenderFilter</filter-class>
+      <lifecycle>RENDER_PHASE</lifecycle>
+   </filter>
+   <filter-mapping>
+      <filter-name>URLTests_LiferayRenderFilter</filter-name>
+      <portlet-name>URLTests_*</portlet-name>
+   </filter-mapping>
 
    <public-render-parameter>
       <identifier>tckPRP1</identifier>

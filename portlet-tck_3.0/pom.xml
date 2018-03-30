@@ -535,6 +535,9 @@
          <activation>
             <activeByDefault>true</activeByDefault>
          </activation>
+         <properties>
+            <test.tck.driver>**/javax/portlet/tck/driver/TCKSimpleTestDriver.java</test.tck.driver>
+         </properties>
          <dependencies>
             <dependency>
                <groupId>org.slf4j</groupId>
@@ -578,6 +581,9 @@
       </profile>
       <profile>
          <id>liferay</id>
+         <properties>
+            <test.tck.driver>**/javax/portlet/tck/driver/TCKLiferayTestDriver.java</test.tck.driver>
+         </properties>
          <dependencies>
             <dependency>
                <groupId>org.slf4j</groupId>
@@ -590,6 +596,11 @@
             <dependency>
                <groupId>log4j</groupId>
                <artifactId>log4j</artifactId>
+            </dependency>
+            <dependency>
+               <groupId>com.liferay</groupId>
+               <artifactId>com.liferay.portlet.tck.extension</artifactId>
+               <version>1.0.0-SNAPSHOT</version>
             </dependency>
          </dependencies>
          <build>
