@@ -247,6 +247,19 @@
       </portlet-info>
    <supported-public-render-parameter>tckPRP1</supported-public-render-parameter>
    </portlet>
+
+    <filter>
+        <filter-name>PortletTests_LiferayRenderFilter</filter-name>
+        <filter-class>com.liferay.portlet.tck.extension.LiferayRenderFilter</filter-class>
+        <lifecycle>RENDER_PHASE</lifecycle>
+    </filter>
+    <filter-mapping>
+        <filter-name>PortletTests_LiferayRenderFilter</filter-name>
+        <portlet-name>PortletTests_*</portlet-name>
+    </filter-mapping>
+
+
+
   <default-namespace>https://www.apache.org</default-namespace>
    <event-definition>
       <qname>tck:PortletTests_Event_ApiEvent</qname>

@@ -72,7 +72,10 @@ public class TCKSimpleTestDriver {
 
    private static WebDriver driver;
    private String page, tcName;
-   
+
+   private static Properties nonExclusiveTCs = new Properties();
+   private static String baseUrl = new String();
+
    private List<String> debugLines = new ArrayList<>();
 
    /**
@@ -172,6 +175,23 @@ public class TCKSimpleTestDriver {
       int numP = pages.size();
       int numTC = tests.size();
       System.out.println("Executing " + numTC + " tests on " + numP + " pages.");
+
+      String nonExclusiveTCsFile = System.getProperty("test.non.exclusive.file", "");
+      System.out.println("   nonExclusiveTCsFile  =" + nonExclusiveTCsFile);
+
+      if ("".equals(nonExclusiveTCsFile)) {
+         System.out.println("   no nonExclusiveTCsFile given.");
+      } else {
+         try {
+            FileInputStream fis = new FileInputStream(nonExclusiveTCsFile);
+            nonExclusiveTCs.loadFromXML(fis);
+         } catch (Exception e) {
+            System.out.println("Could not read nonExclusiveTCs file. Attempted to read file " + nonExclusiveTCsFile);
+            e.printStackTrace();
+            return null;
+         }
+      }
+      System.out.println("   # nonExclusiveTCs =" + nonExclusiveTCs.size());
 
       return tests;
    }
@@ -273,6 +293,17 @@ public class TCKSimpleTestDriver {
          throw new Exception("Unsupported browser: " + browser);
       }
 
+      StringBuilder sb = new StringBuilder();
+      sb.append("http://");
+      sb.append(host);
+      if (port != null && !port.isEmpty()) {
+         sb.append(":");
+         sb.append(port);
+      }
+      sb.append("/");
+      sb.append(testContextBase);
+      baseUrl = sb.toString();
+
       if (!dryrun) {
          login();
       }
@@ -311,6 +342,27 @@ public class TCKSimpleTestDriver {
       }
    }
 
+   public void getExclusive() {
+
+      String[] tokens = tcName.split("_");
+      String lrWar = "_WAR_tck" + tokens[0];
+      String noV2case = tcName.replace("V2", "");
+
+      StringBuilder b = new StringBuilder(noV2case);
+      String portletName = b.substring(0, noV2case.lastIndexOf("_"));
+
+      String portletId =  portletName + lrWar;
+
+      String url = baseUrl +
+                   page +
+                   "?p_p_id=" + portletId +
+                   "&p_p_state=exclusive";
+
+      // System.out.println("getExclusive: url = " + url);
+      driver.get(url);
+
+   }
+
    @Test
    public void test() {
       debugLines.add("   execute test.");
@@ -322,11 +374,40 @@ public class TCKSimpleTestDriver {
       try {
 
          // This is optimized for many results being present on the same page.
-         // First look for the test results or links already being present on the page. 
+         // First look for the test results or links already being present on the page.
 
-         List<WebElement> wels = driver.findElements(By.name(tcName));
+         List<WebElement> wels = null;
+
+         if (nonExclusiveTCs.getProperty(tcName) == null) {
+
+            // System.out.println("test: " + tcName + " should be tested in exclusive state ...");
+            // System.out.println("test: driver.getCurrentUrl() = " + driver.getCurrentUrl());
+
+            // get exclusive portlet for this test case if not already exclusive
+            List<WebElement> metas = driver.findElements(By.tagName("meta"));
+            if (!metas.isEmpty()) {
+               System.out.println("test: getExclusive ...");
+               getExclusive();
+            }
+
+            wels = driver.findElements(By.name(tcName));
+            if (wels.isEmpty()) {
+               // System.out.println("test: wels.isEmpty() true ... getting exclusive portlet ...");
+               getExclusive();
+            }
+
+         } else {
+
+            System.out.println("test: " + tcName + " NOT exclusive ... this should NOT be tested using exclusive state.");
+            accessPage();
+
+         }
+
+         wels = driver.findElements(By.name(tcName));
          debugLines.add("   TC elements already on page: " + !wels.isEmpty() + ", tcname===" + tcName + "===");
          if (wels.isEmpty()) {
+            System.out.println("test: Ideally, this should never happen ...");
+            System.out.println("test: wels.isEmpty() true ... accessing page normally ...");
             wels = accessPage();
          }
          
