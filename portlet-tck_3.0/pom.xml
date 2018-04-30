@@ -226,7 +226,7 @@
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>3.11.0</version>
-            <scope>compile</scope>
+            <scope>test</scope>
          </dependency>
          <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
@@ -503,6 +503,9 @@
          <activation>
             <activeByDefault>true</activeByDefault>
          </activation>
+         <properties>
+            <test.tck.driver>**/javax/portlet/tck/driver/TCKSimpleTestDriver.java</test.tck.driver>
+         </properties>
          <dependencies>
             <dependency>
                <groupId>org.slf4j</groupId>
