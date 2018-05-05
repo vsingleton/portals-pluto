@@ -292,7 +292,10 @@ public class TCKSimpleTestDriver {
       }
 
       if (!dryrun) {
+         System.out.println("setUpBeforeClass: login() ...");
          login();
+         String currentUrl = driver.getCurrentUrl();
+         System.out.println("setUpBeforeClass: currentUrl = " + currentUrl);
       }
 
    }
@@ -384,8 +387,11 @@ public class TCKSimpleTestDriver {
      
       if (wels.isEmpty()) {
          // retry through login page
-         debugLines.add("   logging in ... ");
+         debugLines.add("accessPage: debugLines:   logging in ... ");
+         System.out.println("accessPage: login() ...");
          login();
+         String currentUrl = driver.getCurrentUrl();
+         System.out.println("accessPage: currentUrl = " + currentUrl);
          wels = driver.findElements(By.linkText(page));
          if (wels.isEmpty()) {
             throw new Exception("Page " + page + ": link could not be found.");
@@ -416,7 +422,7 @@ public class TCKSimpleTestDriver {
       // If there is no login or password fields, don't need to login.
       if (!uels.isEmpty() && !pwels.isEmpty()) {
 
-         System.out.println("   No userid / password fields");
+         System.out.println("login: found userid and password fields");
          WebElement userEl = uels.get(0);
          WebElement pwEl = pwels.get(0);
 
@@ -426,6 +432,12 @@ public class TCKSimpleTestDriver {
          pwEl.clear();
          pwEl.sendKeys(password);
          pwEl.submit();
+
+         System.out.println("login: clicked submit already ...");
+
+      } else {
+
+         System.out.println("login: did NOT find userid and password fields.");
 
       }
    }
