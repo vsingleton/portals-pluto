@@ -30,6 +30,112 @@
 <!-- these either fail under htmlunit, or need to be tested under chrome,
 		so ignore them when running with htmlunit -->
 
+<entry key="V3PortletParametersTests_SPEC11_4A_actionPhaseSize"></entry>
+<entry key="V3PortletParametersTests_SPEC11_4A_resourcePhaseGetNames"></entry>
+<entry key="V3PortletParametersTests_SPEC11_4A_resourcePhaseGetValues"></entry>
+<entry key="V3PortletParametersTests_SPEC11_4A_resourcePhaseSize"></entry>
+<entry key="V3PortletParametersTests_SPEC11_4_getNames"></entry>
+<entry key="V3PortletParametersTests_SPEC11_4_getValue"></entry>
+<entry key="V3PortletParametersTests_SPEC11_4_getValues"></entry>
+<entry key="V3PortletParametersTests_SPEC11_4_size"></entry>
+
+<entry key="V3RenderStateTests_SPEC1_12_RenderState_general"></entry>
+<entry key="V3RenderStateTests_SPEC1_12_RenderState_getPortletMode"></entry>
+<entry key="V3RenderStateTests_SPEC1_12_RenderState_getRenderParameters"></entry>
+<entry key="V3RenderStateTests_SPEC1_12_RenderState_getWindowState"></entry>
+<entry key="V3RenderStateTests_SPEC1_12_RenderState_getPortletMode2"></entry>
+<entry key="V3RenderStateTests_SPEC1_12_RenderState_getWindowState2"></entry>
+<entry key="V3RenderStateTests_SPEC2_12_MutableRenderState_getRenderParameters"></entry>
+<entry key="V3RenderStateTests_SPEC2_12_MutableRenderState_getRenderParameters2"></entry>
+<entry key="V3RenderStateTests_SPEC2_12_MutableRenderState_setPortletMode"></entry>
+<entry key="V3RenderStateTests_SPEC2_12_MutableRenderState_setPortletMode2"></entry>
+<entry key="V3RenderStateTests_SPEC2_12_MutableRenderState_setPortletMode3"></entry>
+<entry key="V3RenderStateTests_SPEC2_12_MutableRenderState_setPortletMode4"></entry>
+<entry key="V3RenderStateTests_SPEC2_12_MutableRenderState_setPortletMode5"></entry>
+<entry key="V3RenderStateTests_SPEC2_12_MutableRenderState_setPortletMode6"></entry>
+<entry key="V3RenderStateTests_SPEC2_12_MutableRenderState_setWindowState"></entry>
+<entry key="V3RenderStateTests_SPEC2_12_MutableRenderState_setWindowState2"></entry>
+<entry key="V3RenderStateTests_SPEC2_12_MutableRenderState_setWindowState3"></entry>
+<entry key="V3RenderStateTests_SPEC2_12_MutableRenderState_setWindowState4"></entry>
+<entry key="V3RenderStateTests_SPEC2_12_MutableRenderState_setWindowState5"></entry>
+<entry key="V3RenderStateTests_SPEC2_12_MutableRenderState_setWindowState6"></entry>
+
+<entry key="V3HeaderPortletTests_SPEC14_PortletRequest_ApiHeader_getPortletSessionA2"></entry>
+<entry key="V3HeaderPortletTests_SPEC14_PortletRequest_ApiHeader_getPortletSessionB2"></entry>
+<entry key="V3HeaderPortletTests_SPEC14_PortletRequest_ApiHeader_isRequestedSessionIdValid1"></entry>
+<entry key="V3HeaderPortletTests_SPEC14_PortletRequest_ApiHeader_setAttribute1"></entry>
+<entry key="V3HeaderPortletTests_SPEC15_HeaderResponse_addDependency"></entry>
+<entry key="V3HeaderPortletTests_SPEC15_HeaderResponse_getPortletOutputStream"></entry>
+<entry key="V3HeaderPortletTests_SPEC15_PortletResponse_ApiHeader_addPropertyB1"></entry>
+<entry key="V3HeaderPortletTests_SPEC15_PortletResponse_ApiHeader_addPropertyB2"></entry>
+
+<entry key="V3HeaderPortletTests_SPEC14_RenderState_ApiHeader_getRenderParameters"></entry>
+<entry key="V3HeaderPortletTests_SPEC14_RenderState_ApiHeader_getWindowState"></entry>
+<entry key="V3HeaderPortletTests_SPEC15_HeaderResponse_addDependency10"></entry>
+<entry key="V3HeaderPortletTests_SPEC15_HeaderResponse_addDependency11"></entry>
+<entry key="V3HeaderPortletTests_SPEC15_HeaderResponse_addDependency12"></entry>
+<entry key="V3HeaderPortletTests_SPEC15_HeaderResponse_addDependency2"></entry>
+<entry key="V3HeaderPortletTests_SPEC15_HeaderResponse_addDependency5"></entry>
+<entry key="V3HeaderPortletTests_SPEC15_HeaderResponse_addDependency6"></entry>
+<entry key="V3HeaderPortletTests_SPEC15_HeaderResponse_addDependency7"></entry>
+<entry key="V3HeaderPortletTests_SPEC15_HeaderResponse_addDependency8"></entry>
+<entry key="V3HeaderPortletTests_SPEC15_HeaderResponse_getWriter"></entry>
+<entry key="V3HeaderPortletTests_SPEC15_HeaderResponse_setTitle"></entry>
+<entry key="V3HeaderPortletTests_SPEC15_HeaderResponse_setTitle2"></entry>
+<entry key="V3HeaderPortletTests_SPEC15_HeaderResponse_setTitle3"></entry>
+<entry key="V3HeaderPortletTests_SPEC15_Header_cookie8"></entry>
+<entry key="V3HeaderPortletTests_SPEC15_Header_cookie9"></entry>
+<entry key="V3HeaderPortletTests_SPEC15_Header_parameters10"></entry>
+<entry key="V3HeaderPortletTests_SPEC15_Header_parameters13"></entry>
+<entry key="V3HeaderPortletTests_SPEC15_Header_parameters15"></entry>
+<entry key="V3HeaderPortletTests_SPEC15_Header_parameters2"></entry>
+<entry key="V3HeaderPortletTests_SPEC15_Header_parameters6"></entry>
+<entry key="V3HeaderPortletTests_SPEC15_Header_publicRenderParameters13a"></entry>
+<entry key="V3HeaderPortletTests_SPEC15_Header_publicRenderParameters15"></entry>
+<entry key="V3HeaderPortletTests_SPEC15_Header_publicRenderParameters16"></entry>
+<entry key="V3HeaderPortletTests_SPEC15_MimeResponse_ApiHeader_getBufferSize2"></entry>
+<entry key="V3HeaderPortletTests_SPEC15_MimeResponse_ApiHeader_getPortletOutputStream1"></entry>
+<entry key="V3HeaderPortletTests_SPEC15_MimeResponse_ApiHeader_getWriter2"></entry>
+
+<entry key="V3AnnotationPortletApplicationConfigTests_SPEC1_28_EventConfiguration_declaringEvents1"></entry>
+<entry key="V3AnnotationPortletApplicationConfigTests_SPEC1_28_EventConfiguration_declaringEvents2"></entry>
+<entry key="V3AnnotationPortletApplicationConfigTests_SPEC1_28_DefaultNamespaceURI_declaringDefaultNamespaceURI1"></entry>
+
+<entry key="V3AnnotationPortletArtifactValidityTests_SPEC3_20_ParameterArtifacts_actionParameters"></entry>
+<entry key="V3AnnotationPortletArtifactValidityTests_SPEC3_20_ParameterArtifacts_mutableRenderParameters"></entry>
+<entry key="V3AnnotationPortletArtifactValidityTests_SPEC3_20_ParameterArtifacts_renderParameters"></entry>
+<entry key="V3AnnotationPortletArtifactValidityTests_SPEC3_20_ParameterArtifacts_resourceParameters"></entry>
+<entry key="V3AnnotationPortletArtifactValidityTests_SPEC3_20_PortletArtifacts_contextPath"></entry>
+<entry key="V3AnnotationPortletArtifactValidityTests_SPEC3_20_PortletArtifacts_cookies"></entry>
+<entry key="V3AnnotationPortletArtifactValidityTests_SPEC3_20_PortletArtifacts_locales"></entry>
+<entry key="V3AnnotationPortletArtifactValidityTests_SPEC3_20_PortletArtifacts_namespace"></entry>
+<entry key="V3AnnotationPortletArtifactValidityTests_SPEC3_20_PortletArtifacts_portletConfig"></entry>
+<entry key="V3AnnotationPortletArtifactValidityTests_SPEC3_20_PortletArtifacts_portletContext"></entry>
+<entry key="V3AnnotationPortletArtifactValidityTests_SPEC3_20_PortletArtifacts_portletMode"></entry>
+<entry key="V3AnnotationPortletArtifactValidityTests_SPEC3_20_PortletArtifacts_portletName"></entry>
+<entry key="V3AnnotationPortletArtifactValidityTests_SPEC3_20_PortletArtifacts_portletPreferences"></entry>
+<entry key="V3AnnotationPortletArtifactValidityTests_SPEC3_20_PortletArtifacts_portletSession"></entry>
+<entry key="V3AnnotationPortletArtifactValidityTests_SPEC3_20_PortletArtifacts_windowID"></entry>
+<entry key="V3AnnotationPortletArtifactValidityTests_SPEC3_20_PortletArtifacts_windowState"></entry>
+<entry key="V3AnnotationPortletArtifactValidityTests_SPEC3_20_RequestArtifacts_actionRequest"></entry>
+<entry key="V3AnnotationPortletArtifactValidityTests_SPEC3_20_RequestArtifacts_clientDataRequest"></entry>
+<entry key="V3AnnotationPortletArtifactValidityTests_SPEC3_20_RequestArtifacts_eventRequest"></entry>
+<entry key="V3AnnotationPortletArtifactValidityTests_SPEC3_20_RequestArtifacts_headerRequest"></entry>
+<entry key="V3AnnotationPortletArtifactValidityTests_SPEC3_20_RequestArtifacts_portletRequest"></entry>
+<entry key="V3AnnotationPortletArtifactValidityTests_SPEC3_20_RequestArtifacts_renderRequest"></entry>
+<entry key="V3AnnotationPortletArtifactValidityTests_SPEC3_20_RequestArtifacts_resourceRequest"></entry>
+<entry key="V3AnnotationPortletArtifactValidityTests_SPEC3_20_ResponseArtifacts_actionResponse"></entry>
+<entry key="V3AnnotationPortletArtifactValidityTests_SPEC3_20_ResponseArtifacts_eventResponse"></entry>
+<entry key="V3AnnotationPortletArtifactValidityTests_SPEC3_20_ResponseArtifacts_headerResponse"></entry>
+<entry key="V3AnnotationPortletArtifactValidityTests_SPEC3_20_ResponseArtifacts_mimeResponse"></entry>
+<entry key="V3AnnotationPortletArtifactValidityTests_SPEC3_20_ResponseArtifacts_portletResponse"></entry>
+<entry key="V3AnnotationPortletArtifactValidityTests_SPEC3_20_ResponseArtifacts_renderResponse"></entry>
+<entry key="V3AnnotationPortletArtifactValidityTests_SPEC3_20_ResponseArtifacts_resourceResponse"></entry>
+<entry key="V3AnnotationPortletArtifactValidityTests_SPEC3_20_ResponseArtifacts_stateAwareReponse"></entry>
+
+<entry key="V3AnnotationPortletConfigTests_SPEC2_28_AsynchronousSupport_declaringAsyncSupport1"></entry>
+<entry key="V3AnnotationPortletConfigTests_SPEC2_28_PortletDependency_declaringDependency1"></entry>
+
 <entry key="V2AddlEnvironmentTests_SPEC2_10_ContextOptions_actionScopedRequestAttributes12"></entry>
 <entry key="V2AddlEnvironmentTests_SPEC2_17_ResourcePreferences_deployment10"></entry>
 <entry key="V2AddlEnvironmentTests_SPEC2_17_ResourcePreferences_deployment3"></entry>
