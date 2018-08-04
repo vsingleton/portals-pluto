@@ -744,8 +744,13 @@ TODO: Check if we need all of them. -->
       <dependencyManagement>
         <dependencies>
           <dependency>
-            <groupId>com.liferay.portal</groupId>
-            <artifactId>com.liferay.cdi.bean.portlet.extension</artifactId>
+            <groupId>com.liferay</groupId>
+            <artifactId>com.liferay.bean.portlet.api</artifactId>
+            <version>1.0.0</version>
+          </dependency>
+          <dependency>
+            <groupId>com.liferay</groupId>
+            <artifactId>com.liferay.bean.portlet.cdi.extension</artifactId>
             <version>1.0.0-SNAPSHOT</version>
           </dependency>
         </dependencies>
