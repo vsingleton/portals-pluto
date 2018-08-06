@@ -16,7 +16,7 @@
     "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
     KIND, either express or implied.  See the License for the
     specific language governing permissions and limitations
-    under the License.     
+    under the License.
 -->
 
 <!-- JSR 362 TCK Ignore List                                               -->
@@ -26,40 +26,5 @@
 <properties>
 <entry key="V3ResourceAsyncTests_SPEC_21_Async_getThrowable2"></entry>
 <entry key="V3ResourceAsyncTests_SPEC_21_Async_onError"></entry>
-
-<!-- These tests can't run because they need a class in Portlet API 3.0 -->
-<entry key="V2WrapperTests_ActionResponseWrapper_ApiAction_getPortletMode"></entry>
-<entry key="V2WrapperTests_ActionResponseWrapper_ApiAction_getRenderParameterMap1"></entry>
-<entry key="V2WrapperTests_ActionResponseWrapper_ApiAction_getResponse"></entry>
-<entry key="V2WrapperTests_ActionResponseWrapper_ApiAction_getWindowState"></entry>
-<entry key="V2WrapperTests_ActionResponseWrapper_ApiAction_removePublicRenderParameter"></entry>
-<entry key="V2WrapperTests_ActionResponseWrapper_ApiAction_sendRedirectA"></entry>
-<entry key="V2WrapperTests_ActionResponseWrapper_ApiAction_sendRedirectB"></entry>
-<entry key="V2WrapperTests_ActionResponseWrapper_ApiAction_setEventA"></entry>
-<entry key="V2WrapperTests_ActionResponseWrapper_ApiAction_setEventB"></entry>
-<entry key="V2WrapperTests_ActionResponseWrapper_ApiAction_setPortletMode"></entry>
-<entry key="V2WrapperTests_ActionResponseWrapper_ApiAction_setRenderParameterA"></entry>
-<entry key="V2WrapperTests_ActionResponseWrapper_ApiAction_setRenderParameterB"></entry>
-<entry key="V2WrapperTests_ActionResponseWrapper_ApiAction_setRenderParameters"></entry>
-<entry key="V2WrapperTests_ActionResponseWrapper_ApiAction_setResponse"></entry>
-<entry key="V2WrapperTests_ActionResponseWrapper_ApiAction_setWindowState"></entry>
-
-<entry key="V2WrapperTests_EventResponseWrapper_ApiEvent_getPortletMode"></entry>
-<entry key="V2WrapperTests_EventResponseWrapper_ApiEvent_getRenderParameterMap1"></entry>
-<entry key="V2WrapperTests_EventResponseWrapper_ApiEvent_getResponse"></entry>
-<entry key="V2WrapperTests_EventResponseWrapper_ApiEvent_getWindowState"></entry>
-<entry key="V2WrapperTests_EventResponseWrapper_ApiEvent_removePublicRenderParameter"></entry>
-<entry key="V2WrapperTests_EventResponseWrapper_ApiEvent_setEventA"></entry>
-<entry key="V2WrapperTests_EventResponseWrapper_ApiEvent_setEventB"></entry>
-<entry key="V2WrapperTests_EventResponseWrapper_ApiEvent_setPortletMode"></entry>
-<entry key="V2WrapperTests_EventResponseWrapper_ApiEvent_setRenderParameterA"></entry>
-<entry key="V2WrapperTests_EventResponseWrapper_ApiEvent_setRenderParameterB"></entry>
-<entry key="V2WrapperTests_EventResponseWrapper_ApiEvent_setRenderParametersA"></entry>
-<entry key="V2WrapperTests_EventResponseWrapper_ApiEvent_setRenderParametersB"></entry>
-<entry key="V2WrapperTests_EventResponseWrapper_ApiEvent_setResponse"></entry>
-<entry key="V2WrapperTests_EventResponseWrapper_ApiEvent_setWindowState"></entry>
-
-<entry key="V2WrapperTests_ResourceRequestWrapper_ApiResource_getPrivateRenderParameterMap"></entry>
-<entry key="V2EnvironmentTests_PortletContext_ApiRender_getMajorVersion"></entry>
 
 </properties>

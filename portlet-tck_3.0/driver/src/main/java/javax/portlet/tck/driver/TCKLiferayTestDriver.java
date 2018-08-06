@@ -67,7 +67,6 @@ public class TCKLiferayTestDriver extends TCKSimpleTestDriver {
 
    private void getNonExclusiveTCs() {
       String nonExclusiveTCsFile = System.getProperty("test.non.exclusive.file", "");
-      System.out.println("   nonExclusiveTCsFile  =" + nonExclusiveTCsFile);
 
       if ("".equals(nonExclusiveTCsFile)) {
          System.out.println("   no nonExclusiveTCsFile given.");
@@ -80,7 +79,6 @@ public class TCKLiferayTestDriver extends TCKSimpleTestDriver {
             e.printStackTrace();
          }
       }
-      System.out.println("   # nonExclusiveTCs =" + nonExclusiveTCs.size());
    }
 
    public TCKLiferayTestDriver(String p, String t) {

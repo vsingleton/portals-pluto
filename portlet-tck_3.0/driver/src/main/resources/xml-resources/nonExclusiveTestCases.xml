@@ -980,12 +980,26 @@
 <entry key="V2EnvironmentTests_CacheControl_ApiRender_isPublicScope3"></entry>
 <entry key="V2EnvironmentTests_CacheControl_ApiRender_isPublicScope5"></entry>
 <entry key="V2EnvironmentTests_CacheControl_ApiRender_useCachedContent3"></entry>
+
 <entry key="V2EnvironmentTests_CacheControl_ApiResource_getExpirationTime3"></entry>
 <entry key="V2EnvironmentTests_CacheControl_ApiResource_isPublicScope1"></entry>
 <entry key="V2EnvironmentTests_CacheControl_ApiResource_isPublicScope2"></entry>
 <entry key="V2EnvironmentTests_CacheControl_ApiResource_isPublicScope3"></entry>
 <entry key="V2EnvironmentTests_CacheControl_ApiResource_isPublicScope5"></entry>
 <entry key="V2EnvironmentTests_CacheControl_ApiResource_useCachedContent3"></entry>
+
+<entry key="V2EnvironmentTests_CacheControl_ApiResource_getETag1"></entry>
+<entry key="V2EnvironmentTests_CacheControl_ApiResource_getETag2"></entry>
+<entry key="V2EnvironmentTests_CacheControl_ApiResource_getExpirationTime1"></entry>
+<entry key="V2EnvironmentTests_CacheControl_ApiResource_getExpirationTime2"></entry>
+<entry key="V2EnvironmentTests_CacheControl_ApiResource_setETag1"></entry>
+<entry key="V2EnvironmentTests_CacheControl_ApiResource_setETag2"></entry>
+<entry key="V2EnvironmentTests_CacheControl_ApiResource_setExpirationTime1"></entry>
+<entry key="V2EnvironmentTests_CacheControl_ApiResource_setExpirationTime2"></entry>
+<entry key="V2EnvironmentTests_CacheControl_ApiResource_setExpirationTime3"></entry>
+<entry key="V2EnvironmentTests_CacheControl_ApiResource_setPublicScope1"></entry>
+<entry key="V2EnvironmentTests_CacheControl_ApiResource_setPublicScope2"></entry>
+
 <entry key="V2EnvironmentTests_PortalContext_ApiRender_fieldMARKUP_HEAD_ELEMENT_SUPPORT"></entry>
 <entry key="V2EnvironmentTests_PortletContext_ApiRender_getInitParameter1"></entry>
 <entry key="V2EnvironmentTests_PortletContext_ApiRender_getInitParameter2"></entry>
@@ -1773,5 +1787,39 @@
 <entry key="V2WrapperTests_EventRequestWrapper_ApiEvent_getMethod"></entry>
 <entry key="V2WrapperTests_EventRequestWrapper_ApiEvent_getRequest"></entry>
 <entry key="V2WrapperTests_EventRequestWrapper_ApiEvent_setRequest"></entry>
+
+<!-- These tests need a class in Portlet API 3.0 -->
+<entry key="V2WrapperTests_ActionResponseWrapper_ApiAction_getPortletMode"></entry>
+<entry key="V2WrapperTests_ActionResponseWrapper_ApiAction_getRenderParameterMap1"></entry>
+<entry key="V2WrapperTests_ActionResponseWrapper_ApiAction_getResponse"></entry>
+<entry key="V2WrapperTests_ActionResponseWrapper_ApiAction_getWindowState"></entry>
+<entry key="V2WrapperTests_ActionResponseWrapper_ApiAction_removePublicRenderParameter"></entry>
+<entry key="V2WrapperTests_ActionResponseWrapper_ApiAction_sendRedirectA"></entry>
+<entry key="V2WrapperTests_ActionResponseWrapper_ApiAction_sendRedirectB"></entry>
+<entry key="V2WrapperTests_ActionResponseWrapper_ApiAction_setEventA"></entry>
+<entry key="V2WrapperTests_ActionResponseWrapper_ApiAction_setEventB"></entry>
+<entry key="V2WrapperTests_ActionResponseWrapper_ApiAction_setPortletMode"></entry>
+<entry key="V2WrapperTests_ActionResponseWrapper_ApiAction_setRenderParameterA"></entry>
+<entry key="V2WrapperTests_ActionResponseWrapper_ApiAction_setRenderParameterB"></entry>
+<entry key="V2WrapperTests_ActionResponseWrapper_ApiAction_setRenderParameters"></entry>
+<entry key="V2WrapperTests_ActionResponseWrapper_ApiAction_setResponse"></entry>
+<entry key="V2WrapperTests_ActionResponseWrapper_ApiAction_setWindowState"></entry>
+
+<entry key="V2WrapperTests_EventResponseWrapper_ApiEvent_getPortletMode"></entry>
+<entry key="V2WrapperTests_EventResponseWrapper_ApiEvent_getRenderParameterMap1"></entry>
+<entry key="V2WrapperTests_EventResponseWrapper_ApiEvent_getResponse"></entry>
+<entry key="V2WrapperTests_EventResponseWrapper_ApiEvent_getWindowState"></entry>
+<entry key="V2WrapperTests_EventResponseWrapper_ApiEvent_removePublicRenderParameter"></entry>
+<entry key="V2WrapperTests_EventResponseWrapper_ApiEvent_setEventA"></entry>
+<entry key="V2WrapperTests_EventResponseWrapper_ApiEvent_setEventB"></entry>
+<entry key="V2WrapperTests_EventResponseWrapper_ApiEvent_setPortletMode"></entry>
+<entry key="V2WrapperTests_EventResponseWrapper_ApiEvent_setRenderParameterA"></entry>
+<entry key="V2WrapperTests_EventResponseWrapper_ApiEvent_setRenderParameterB"></entry>
+<entry key="V2WrapperTests_EventResponseWrapper_ApiEvent_setRenderParametersA"></entry>
+<entry key="V2WrapperTests_EventResponseWrapper_ApiEvent_setRenderParametersB"></entry>
+<entry key="V2WrapperTests_EventResponseWrapper_ApiEvent_setResponse"></entry>
+<entry key="V2WrapperTests_EventResponseWrapper_ApiEvent_setWindowState"></entry>
+
+<entry key="V2WrapperTests_ResourceRequestWrapper_ApiResource_getPrivateRenderParameterMap"></entry>
 
 </properties>

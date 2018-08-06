@@ -16,7 +16,7 @@
     "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
     KIND, either express or implied.  See the License for the
     specific language governing permissions and limitations
-    under the License.     
+    under the License.
 -->
 
 <!-- JSR 362 TCK Ignore List                                               -->
@@ -55,15 +55,6 @@
 <entry key="V3PortletParametersTests_SPEC11_3_getValue"></entry>
 <entry key="V3PortletParametersTests_SPEC11_3_getValues"></entry>
 <entry key="V3PortletParametersTests_SPEC11_3_size"></entry>
-<entry key="V3PortletParametersTests_SPEC11_4A_actionPhaseGetNames"></entry>
-<entry key="V3PortletParametersTests_SPEC11_4A_actionPhaseGetValues"></entry>
-<entry key="V3PortletParametersTests_SPEC11_4A_headerPhaseGetNames"></entry>
-<entry key="V3PortletParametersTests_SPEC11_4A_headerPhaseGetValues"></entry>
-<entry key="V3PortletParametersTests_SPEC11_4A_headerPhaseSize"></entry>
-<entry key="V3PortletParametersTests_SPEC11_4A_renderPhaseGetNames"></entry>
-<entry key="V3PortletParametersTests_SPEC11_4A_renderPhaseGetValues"></entry>
-<entry key="V3PortletParametersTests_SPEC11_4A_renderPhaseSize"></entry>
-<entry key="V3PortletParametersTests_SPEC11_4_clone"></entry>
 
 <entry key="V3ResourceAsyncTests_SPEC_21_Async_getThrowable2"></entry>
 <entry key="V3ResourceAsyncTests_SPEC_21_Async_onError"></entry>
@@ -85,10 +76,6 @@
 <entry key="V3URLTests_ResourceURL_getResourceParameters"></entry>
 <entry key="V3URLTests_ResourceURL_getResourceParameters2"></entry>
 <entry key="V3URLTests_ResourceURL_getResourceParameters3"></entry>
-
-<entry key="V3RenderStateTests_SPEC1_12_RenderState_getRenderParameters2"></entry>
-<entry key="V3RenderStateTests_SPEC1_12_RenderState_getRenderParameters3"></entry>
-<entry key="V3RenderStateTests_SPEC2_12_MutableRenderState_getRenderParameters3"></entry>
 
 <entry key="V3PortletContextTests_Context_getClassLoader"></entry>
 <entry key="V3PortletContextTests_Context_getContextPath"></entry>
@@ -2020,6 +2007,9 @@
 <entry key="V2DispatcherTests6_SPEC2_19_FwdThenIncludeServletRender_invoke7"></entry>
 <entry key="V2DispatcherTests6_SPEC2_19_FwdThenIncludeServletRender_invoke9"></entry>
 <entry key="V2AddlPortletTests_SPEC2_6_RenderConfig_getContainerRuntimeOptions4"></entry>
+
+<entry key="V2EnvironmentTests_PortletContext_ApiRender_getMajorVersion"></entry>
+
 <entry key="V2EnvironmentTests_CacheControl_ApiRender_getETag1"></entry>
 <entry key="V2EnvironmentTests_CacheControl_ApiRender_getETag2"></entry>
 <entry key="V2EnvironmentTests_CacheControl_ApiRender_getExpirationTime1"></entry>
@@ -4567,8 +4557,5 @@ V2URLTests_BaseURL_ApiRenderResurl_setSecure2
 <entry key="V2WrapperTests_EventResponseWrapper_ApiEvent_setRenderParametersB"></entry>
 <entry key="V2WrapperTests_EventResponseWrapper_ApiEvent_setResponse"></entry>
 <entry key="V2WrapperTests_EventResponseWrapper_ApiEvent_setWindowState"></entry>
-
-<entry key="V2WrapperTests_ResourceRequestWrapper_ApiResource_getPrivateRenderParameterMap"></entry>
-<entry key="V2EnvironmentTests_PortletContext_ApiRender_getMajorVersion"></entry>
 
 </properties>
