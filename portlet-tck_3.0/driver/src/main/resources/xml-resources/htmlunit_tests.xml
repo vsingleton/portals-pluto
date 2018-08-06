@@ -55,15 +55,6 @@
 <entry key="V3PortletParametersTests_SPEC11_3_getValue"></entry>
 <entry key="V3PortletParametersTests_SPEC11_3_getValues"></entry>
 <entry key="V3PortletParametersTests_SPEC11_3_size"></entry>
-<entry key="V3PortletParametersTests_SPEC11_4A_actionPhaseGetNames"></entry>
-<entry key="V3PortletParametersTests_SPEC11_4A_actionPhaseGetValues"></entry>
-<entry key="V3PortletParametersTests_SPEC11_4A_headerPhaseGetNames"></entry>
-<entry key="V3PortletParametersTests_SPEC11_4A_headerPhaseGetValues"></entry>
-<entry key="V3PortletParametersTests_SPEC11_4A_headerPhaseSize"></entry>
-<entry key="V3PortletParametersTests_SPEC11_4A_renderPhaseGetNames"></entry>
-<entry key="V3PortletParametersTests_SPEC11_4A_renderPhaseGetValues"></entry>
-<entry key="V3PortletParametersTests_SPEC11_4A_renderPhaseSize"></entry>
-<entry key="V3PortletParametersTests_SPEC11_4_clone"></entry>
 
 <entry key="V3ResourceAsyncTests_SPEC_21_Async_getThrowable2"></entry>
 <entry key="V3ResourceAsyncTests_SPEC_21_Async_onError"></entry>
