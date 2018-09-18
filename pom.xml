@@ -757,6 +757,11 @@ TODO: Check if we need all of them. -->
       </dependencyManagement>
       <repositories>
         <repository>
+          <id>liferay-nexus</id>
+          <name>Liferay Nexus</name>
+          <url>https://repository.liferay.com/nexus/content/groups/public</url>
+        </repository>
+        <repository>
           <id>liferay-snapshots</id>
           <name>Liferay Snapshots</name>
           <url>https://oss.sonatype.org/content/repositories/snapshots</url>
