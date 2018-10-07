@@ -129,9 +129,6 @@
 <entry key="V3PortletParametersTests_SPEC11_3_getValues"></entry>
 <entry key="V3PortletParametersTests_SPEC11_3_size"></entry>
 
-<entry key="V3ResourceAsyncTests_SPEC_21_Async_getThrowable2"></entry>
-<entry key="V3ResourceAsyncTests_SPEC_21_Async_onError"></entry>
-
 <entry key="V3URLTests_ActionURL_getActionParameters"></entry>
 <entry key="V3URLTests_ActionURL_getActionParameters2"></entry>
 <entry key="V3URLTests_ActionURL_getActionParameters3"></entry>
@@ -516,11 +513,6 @@
 <!-- why is V2AddlRequestTests_SPEC2_11_Action_publicRenderParameters4 passing? -->
 <!-- V2AddlRequestTests_SPEC2_11_Action_publicRenderParameters11 needs to be run before prp4 -->
 
-<!--
-<entry key="V2AddlRequestTests_SPEC2_11_Action_publicRenderParameters11"></entry>
-<entry key="V2AddlRequestTests_SPEC2_11_Action_publicRenderParameters15"></entry>
-<entry key="V2AddlRequestTests_SPEC2_11_Action_publicRenderParameters16"></entry>
--->
 <!-- V2AddlRequestTests_SPEC2_11_Action_publicRenderParameters4 -->
 
 <entry key="V2AddlRequestTests_SPEC2_11_EventAttr_attributes1"></entry>
@@ -4402,76 +4394,6 @@
 <entry key="V2URLTests_BaseURL_ApiRenderActurl_setProperty1"></entry>
 <entry key="V2URLTests_BaseURL_ApiRenderActurl_setProperty3"></entry>
 
-<!--	cannot ignore these.
-		they need to get executed so that
-		V2URLTests_BaseURL_ApiRenderResurl_setSecure2 passes
-
-V2URLTests_BaseURL_ApiRenderActurl_setSecure2
-V2URLTests_BaseURL_ApiRenderActurl_toString
-V2URLTests_BaseURL_ApiRenderActurl_writeA1
-V2URLTests_BaseURL_ApiRenderActurl_writeB1
-V2URLTests_BaseURL_ApiRenderRenurl_addProperty1
-V2URLTests_BaseURL_ApiRenderRenurl_addProperty3
-V2URLTests_BaseURL_ApiRenderRenurl_getParameterMap1
-V2URLTests_BaseURL_ApiRenderRenurl_getParameterMap2
-V2URLTests_BaseURL_ApiRenderRenurl_getParameterMap6
-V2URLTests_BaseURL_ApiRenderRenurl_setParameterA1
-V2URLTests_BaseURL_ApiRenderRenurl_setParameterA2
-V2URLTests_BaseURL_ApiRenderRenurl_setParameterA3
-V2URLTests_BaseURL_ApiRenderRenurl_setParameterA6
-V2URLTests_BaseURL_ApiRenderRenurl_setParameterA7
-V2URLTests_BaseURL_ApiRenderRenurl_setParameterA8
-V2URLTests_BaseURL_ApiRenderRenurl_setParameterB1
-V2URLTests_BaseURL_ApiRenderRenurl_setParameterB2
-V2URLTests_BaseURL_ApiRenderRenurl_setParameterB3
-V2URLTests_BaseURL_ApiRenderRenurl_setParameterB6
-V2URLTests_BaseURL_ApiRenderRenurl_setParameterB7
-V2URLTests_BaseURL_ApiRenderRenurl_setParameterB8
-V2URLTests_BaseURL_ApiRenderRenurl_setParameters1
-V2URLTests_BaseURL_ApiRenderRenurl_setParameters10
-V2URLTests_BaseURL_ApiRenderRenurl_setParameters12
-V2URLTests_BaseURL_ApiRenderRenurl_setParameters2
-V2URLTests_BaseURL_ApiRenderRenurl_setParameters3
-V2URLTests_BaseURL_ApiRenderRenurl_setParameters6
-V2URLTests_BaseURL_ApiRenderRenurl_setParameters7
-V2URLTests_BaseURL_ApiRenderRenurl_setParameters8
-V2URLTests_BaseURL_ApiRenderRenurl_setParameters9
-V2URLTests_BaseURL_ApiRenderRenurl_setProperty1
-V2URLTests_BaseURL_ApiRenderRenurl_setProperty3
-V2URLTests_BaseURL_ApiRenderRenurl_setSecure2
-V2URLTests_BaseURL_ApiRenderRenurl_toString
-V2URLTests_BaseURL_ApiRenderRenurl_writeA1
-V2URLTests_BaseURL_ApiRenderRenurl_writeB1
-V2URLTests_BaseURL_ApiRenderResurl_addProperty1
-V2URLTests_BaseURL_ApiRenderResurl_addProperty3
-V2URLTests_BaseURL_ApiRenderResurl_getParameterMap1
-V2URLTests_BaseURL_ApiRenderResurl_getParameterMap4
-V2URLTests_BaseURL_ApiRenderResurl_getParameterMap5
-V2URLTests_BaseURL_ApiRenderResurl_getParameterMap6
-V2URLTests_BaseURL_ApiRenderResurl_setParameterA1
-V2URLTests_BaseURL_ApiRenderResurl_setParameterA5
-V2URLTests_BaseURL_ApiRenderResurl_setParameterA6
-V2URLTests_BaseURL_ApiRenderResurl_setParameterA7
-V2URLTests_BaseURL_ApiRenderResurl_setParameterA8
-V2URLTests_BaseURL_ApiRenderResurl_setParameterB1
-V2URLTests_BaseURL_ApiRenderResurl_setParameterB5
-V2URLTests_BaseURL_ApiRenderResurl_setParameterB6
-V2URLTests_BaseURL_ApiRenderResurl_setParameterB7
-V2URLTests_BaseURL_ApiRenderResurl_setParameterB8
-V2URLTests_BaseURL_ApiRenderResurl_setParameters1
-V2URLTests_BaseURL_ApiRenderResurl_setParameters10
-V2URLTests_BaseURL_ApiRenderResurl_setParameters12
-V2URLTests_BaseURL_ApiRenderResurl_setParameters5
-V2URLTests_BaseURL_ApiRenderResurl_setParameters6
-V2URLTests_BaseURL_ApiRenderResurl_setParameters7
-V2URLTests_BaseURL_ApiRenderResurl_setParameters8
-V2URLTests_BaseURL_ApiRenderResurl_setParameters9
-V2URLTests_BaseURL_ApiRenderResurl_setProperty1
-V2URLTests_BaseURL_ApiRenderResurl_setProperty3
-V2URLTests_BaseURL_ApiRenderResurl_setSecure2
-
--->
-
 <entry key="V2URLTests_PortletURLGenerationListener_ApiRenderActurl_configuration"></entry>
 <entry key="V2URLTests_PortletURLGenerationListener_ApiRenderActurl_filterActionURL1"></entry>
 <entry key="V2URLTests_PortletURLGenerationListener_ApiRenderActurl_filterActionURL2"></entry>
@@ -4599,40 +4521,5 @@ V2URLTests_BaseURL_ApiRenderResurl_setSecure2
 <entry key="V2WrapperTests_RenderResponseWrapper_ApiRender_setNextPossiblePortletModes"></entry>
 <entry key="V2WrapperTests_RenderResponseWrapper_ApiRender_setResponse"></entry>
 <entry key="V2WrapperTests_RenderResponseWrapper_ApiRender_setTitle"></entry>
-
-<!-- These tests can't run because they need a class in Portlet API 3.0 -->
-<entry key="V2WrapperTests_ActionResponseWrapper_ApiAction_getPortletMode"></entry>
-<entry key="V2WrapperTests_ActionResponseWrapper_ApiAction_getRenderParameterMap1"></entry>
-<entry key="V2WrapperTests_ActionResponseWrapper_ApiAction_getResponse"></entry>
-<entry key="V2WrapperTests_ActionResponseWrapper_ApiAction_getWindowState"></entry>
-<entry key="V2WrapperTests_ActionResponseWrapper_ApiAction_removePublicRenderParameter"></entry>
-<entry key="V2WrapperTests_ActionResponseWrapper_ApiAction_sendRedirectA"></entry>
-<entry key="V2WrapperTests_ActionResponseWrapper_ApiAction_sendRedirectB"></entry>
-<entry key="V2WrapperTests_ActionResponseWrapper_ApiAction_setEventA"></entry>
-<entry key="V2WrapperTests_ActionResponseWrapper_ApiAction_setEventB"></entry>
-<entry key="V2WrapperTests_ActionResponseWrapper_ApiAction_setPortletMode"></entry>
-<entry key="V2WrapperTests_ActionResponseWrapper_ApiAction_setRenderParameterA"></entry>
-<entry key="V2WrapperTests_ActionResponseWrapper_ApiAction_setRenderParameterB"></entry>
-<entry key="V2WrapperTests_ActionResponseWrapper_ApiAction_setRenderParameters"></entry>
-<entry key="V2WrapperTests_ActionResponseWrapper_ApiAction_setResponse"></entry>
-<entry key="V2WrapperTests_ActionResponseWrapper_ApiAction_setWindowState"></entry>
-
-<entry key="V2WrapperTests_EventResponseWrapper_ApiEvent_getPortletMode"></entry>
-<entry key="V2WrapperTests_EventResponseWrapper_ApiEvent_getRenderParameterMap1"></entry>
-<entry key="V2WrapperTests_EventResponseWrapper_ApiEvent_getResponse"></entry>
-<entry key="V2WrapperTests_EventResponseWrapper_ApiEvent_getWindowState"></entry>
-<entry key="V2WrapperTests_EventResponseWrapper_ApiEvent_removePublicRenderParameter"></entry>
-<entry key="V2WrapperTests_EventResponseWrapper_ApiEvent_setEventA"></entry>
-<entry key="V2WrapperTests_EventResponseWrapper_ApiEvent_setEventB"></entry>
-<entry key="V2WrapperTests_EventResponseWrapper_ApiEvent_setPortletMode"></entry>
-<entry key="V2WrapperTests_EventResponseWrapper_ApiEvent_setRenderParameterA"></entry>
-<entry key="V2WrapperTests_EventResponseWrapper_ApiEvent_setRenderParameterB"></entry>
-<entry key="V2WrapperTests_EventResponseWrapper_ApiEvent_setRenderParametersA"></entry>
-<entry key="V2WrapperTests_EventResponseWrapper_ApiEvent_setRenderParametersB"></entry>
-<entry key="V2WrapperTests_EventResponseWrapper_ApiEvent_setResponse"></entry>
-<entry key="V2WrapperTests_EventResponseWrapper_ApiEvent_setWindowState"></entry>
-
-<entry key="V2WrapperTests_ResourceRequestWrapper_ApiResource_getPrivateRenderParameterMap"></entry>
-<entry key="V2EnvironmentTests_PortletContext_ApiRender_getMajorVersion"></entry>
 
 </properties>
