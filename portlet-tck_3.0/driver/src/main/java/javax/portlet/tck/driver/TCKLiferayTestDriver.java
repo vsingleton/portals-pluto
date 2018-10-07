@@ -18,11 +18,13 @@
 
 package javax.portlet.tck.driver;
 
+import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -126,6 +128,7 @@ public class TCKLiferayTestDriver extends TCKSimpleTestDriver {
          return;
       }
 
+      StringBuffer sb = new StringBuffer();
       try {
 
          // This is optimized for many results being present on the same page.
@@ -181,14 +184,20 @@ public class TCKLiferayTestDriver extends TCKSimpleTestDriver {
             exclusive = false;
          }
 
+         sb.append("processClickable ...");
          // process links if present
          wels = processClickable(wels);
+         sb.append(" done.");
          debugLines.add("   After processing clickable, results found: " + !wels.isEmpty());
 
          // wait for any async JavaScript tests to complete
+         sb.append(" processAsync ...");
          processAsync();
+         sb.append(" done.");
 
+         sb.append(" checkResults ...");
          checkResults();
+         sb.append(" done.");
 
       } catch(Exception e) {
 
@@ -196,6 +205,7 @@ public class TCKLiferayTestDriver extends TCKSimpleTestDriver {
          // and mark the TC as failed.
          String currentUrl = driver.getCurrentUrl();
 
+         System.out.println("test: sb = " + sb.toString());
          System.out.println("   Exception occurred: " + e.getMessage());
          System.out.println("      diagnostic url = " + currentUrl);
          for (String line : debugLines) {

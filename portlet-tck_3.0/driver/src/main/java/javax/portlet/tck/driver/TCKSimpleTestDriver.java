@@ -288,7 +288,7 @@ public class TCKSimpleTestDriver {
          capabilities.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, binary);
          driver = new PhantomJSDriver(capabilities);
       } else if (browser.equalsIgnoreCase("htmlUnit")) {
-        driver = new HtmlUnitDriver(true);
+        driver = new HtmlUnitDriver();
       } else if (browser.equalsIgnoreCase("safari")) {
          driver = new SafariDriver();
       } else {
@@ -296,7 +296,10 @@ public class TCKSimpleTestDriver {
       }
 
       if (!dryrun) {
+         System.out.println("setUpBeforeClass: login() ...");
          login();
+         String currentUrl = driver.getCurrentUrl();
+         System.out.println("setUpBeforeClass: currentUrl = " + currentUrl);
       }
 
    }
@@ -383,12 +386,14 @@ public class TCKSimpleTestDriver {
     * @return  a list of elements for the TC (should only be one)
     */
    protected List<WebElement> accessPage() throws Exception {
+//    System.out.println("accessPage: page = " + page + " ...");
       List<WebElement> wels = driver.findElements(By.linkText(page));
       debugLines.add("   Access page, link found: " + !wels.isEmpty() + ", page===" + page + "===");
      
       if (wels.isEmpty()) {
          // retry through login page
          debugLines.add("accessPage: debugLines:   logging in ... ");
+//       System.out.println("accessPage: WebElements not found ... login() ...");
          login();
          wels = driver.findElements(By.linkText(page));
          if (wels.isEmpty()) {
@@ -397,6 +402,7 @@ public class TCKSimpleTestDriver {
       } 
       
       WebElement wel = wels.get(0);
+
       if (scroll) {
          JavascriptExecutor javascriptExecutor = (JavascriptExecutor) driver;
          javascriptExecutor.executeScript("window.scrollTo(0, (arguments[0].getBoundingClientRect().top + window.pageYOffset) - (window.innerHeight / 2));", wel);
@@ -438,6 +444,12 @@ public class TCKSimpleTestDriver {
          pwEl.clear();
          pwEl.sendKeys(password);
          pwEl.submit();
+
+         System.out.println("login: clicked submit already ...");
+
+      } else {
+
+         System.out.println("login: did NOT find userid and password fields.");
 
       }
    }
