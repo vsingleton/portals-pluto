@@ -25,6 +25,9 @@
 
 <properties>
 
+<!-- BEGIN ignores which need to be fixed -->
+<!-- END ignores which need to be fixed -->
+
 <entry key="V3ResourceAsyncTests_SPEC_21_Async_getThrowable2"></entry>
 <entry key="V3ResourceAsyncTests_SPEC_21_Async_onError"></entry>
 
