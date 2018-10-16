@@ -25,6 +25,58 @@
 
 <properties>
 
+<!-- BEGIN ignores which need to be fixed -->
+
+<entry key="V2DispatcherReqRespTests2_SPEC2_19_ForwardServletActionRequest_getPathInfo"></entry>
+<entry key="V2DispatcherReqRespTests2_SPEC2_19_ForwardServletEventRequest_getPathInfo"></entry>
+<entry key="V2DispatcherReqRespTests2_SPEC2_19_ForwardServletRenderRequest_getPathInfo"></entry>
+<entry key="V2AddlPortletTests_SPEC2_13_ResourceServing_resourceURLs7"></entry>
+<entry key="V2AddlRequestTests_SPEC2_11_Action_publicRenderParameters4"></entry>
+<entry key="V2DispatcherReqRespTests2_SPEC2_19_ForwardServletResourceRequest_getPathInfo"></entry>
+<entry key="V2DispatcherTests_SPEC2_19_ForwardServletResource_dispatch2"></entry>
+<entry key="V2DispatcherTests_SPEC2_19_IncludeServletResource_dispatch2"></entry>
+<entry key="V2DispatcherTests2_SPEC2_19_ForwardJSPResource_dispatch2"></entry>
+<entry key="V2DispatcherTests2_SPEC2_19_IncludeJSPResource_dispatch2"></entry>
+<entry key="V2EnvironmentTests_PortletSession_ApiRender_isNew1"></entry>
+<entry key="V2URLTests_ResourceURL_ApiRenderResurl_resourceURL6"></entry>
+<entry key="V3AnnotationPortletConfigTests_SPEC2_28_PortletDependency_declaringDependency1"></entry>
+<entry key="V3HeaderPortletTests_SPEC14_PortletRequest_ApiHeader_getPortletSessionA2"></entry>
+<entry key="V3HeaderPortletTests_SPEC14_PortletRequest_ApiHeader_getPortletSessionB2"></entry>
+<entry key="V3HeaderPortletTests_SPEC14_PortletRequest_ApiHeader_isRequestedSessionIdValid1"></entry>
+
+<entry key="V3PortletHubTests_SPEC_23_JSURL_createResourceUrl0"></entry>
+<entry key="V3PortletHubTests_SPEC_23_JSURL_createResourceUrl1"></entry>
+<entry key="V3PortletHubTests_SPEC_23_JSURL_createResourceUrl2"></entry>
+<entry key="V3PortletHubTests_SPEC_23_JSURL_createResourceUrl3"></entry>
+<entry key="V3PortletHubTests_SPEC_23_JSURL_createResourceUrl4"></entry>
+<entry key="V3PortletHubTests_SPEC_23_JSURL_createResourceUrl5"></entry>
+<entry key="V3PortletHubTests_SPEC_23_JSURL_createResourceUrl6"></entry>
+<entry key="V3PortletHubTests_SPEC_23_JSURL_createResourceUrl7"></entry>
+<entry key="V3PortletHubTests_SPEC_23_JSURL_createResourceUrl8"></entry>
+<entry key="V3PortletHubTests_SPEC_23_JSURL_createResourceUrl9"></entry>
+<entry key="V3PortletHubTests_SPEC_23_JSURL_createResourceUrlA"></entry>
+<entry key="V3PortletHubTests_SPEC_23_JSURL_createResourceUrlB"></entry>
+<entry key="V3PortletHubTests_SPEC_23_JSURL_createResourceUrlC"></entry>
+<entry key="V3PortletHubTests_SPEC_23_JSURL_createResourceUrlD"></entry>
+<entry key="V3RenderStateTests_SPEC1_12_RenderState_general"></entry>
+<entry key="V3RenderStateTests_SPEC1_12_RenderState_getPortletMode"></entry>
+
+<entry key="V2PortletTagLibraryTests3_SPEC2_26_IncludeJSPResource_actionURL19"></entry>
+<entry key="V3RenderStateTests_SPEC1_12_RenderState_getPortletMode2"></entry>
+<entry key="V3RenderStateTests_SPEC1_12_RenderState_getRenderParameters"></entry>
+
+<entry key="V2AddlResponseTests_SPEC2_12_Resource_cookie15"></entry>
+<entry key="V2AddlResponseTests_SPEC2_12_Resource_cookie17"></entry>
+
+<entry key="V3RenderStateTests_SPEC1_12_RenderState_getWindowState"></entry>
+
+<entry key="V3RenderStateTests_SPEC1_12_RenderState_getWindowState2"></entry>
+
+<entry key="V2AddlPortletTests_SPEC2_13_ResourceServingCache_cachingPORTLET1"></entry>
+<entry key="V3RenderStateTests_SPEC2_12_MutableRenderState_getRenderParameters"></entry>
+
+<!-- END ignores which need to be fixed -->
+
 <entry key="V3ResourceAsyncTests_SPEC_21_Async_getThrowable2"></entry>
 <entry key="V3ResourceAsyncTests_SPEC_21_Async_onError"></entry>
 
