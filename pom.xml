@@ -740,6 +740,41 @@ TODO: Check if we need all of them. -->
     </profile>
 
     <profile>
+      <id>liferay</id>
+      <dependencyManagement>
+        <dependencies>
+          <dependency>
+            <groupId>com.liferay</groupId>
+            <artifactId>com.liferay.bean.portlet.api</artifactId>
+            <version>1.0.0</version>
+          </dependency>
+          <dependency>
+            <groupId>com.liferay</groupId>
+            <artifactId>com.liferay.bean.portlet.cdi.extension</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+          </dependency>
+        </dependencies>
+      </dependencyManagement>
+      <repositories>
+        <repository>
+          <id>liferay-nexus</id>
+          <name>Liferay Nexus</name>
+          <url>https://repository.liferay.com/nexus/content/groups/public</url>
+        </repository>
+        <repository>
+          <id>liferay-snapshots</id>
+          <name>Liferay Snapshots</name>
+          <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+          <releases>
+            <enabled>false</enabled>
+          </releases>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+        </repository>
+      </repositories>
+    </profile>
+    <profile>
       <id>website</id>
       <!-- For building website documentation, there's no need to include modules. -->
       <modules />
