@@ -17,6 +17,9 @@
  */
 package org.apache.portals.pluto.test.utilities;
 
+import com.gargoylesoftware.htmlunit.SilentCssErrorHandler;
+import com.gargoylesoftware.htmlunit.WebClient;
+import com.gargoylesoftware.htmlunit.WebClientOptions;
 import java.util.List;
 
 import org.junit.AfterClass;
@@ -159,7 +162,18 @@ public class SimpleTestDriver {
             capabilities.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, binary);
             driver = new PhantomJSDriver(capabilities);
          } else if (browser.equalsIgnoreCase("htmlUnit")) {
-           driver = new HtmlUnitDriver();
+           driver = new HtmlUnitDriver() {
+			   @Override
+			   protected WebClient getWebClient() {
+				   WebClient webClient = super.getWebClient();
+				   WebClientOptions options = webClient.getOptions();
+				   options.setThrowExceptionOnFailingStatusCode(false);
+				   options.setThrowExceptionOnScriptError(false);
+				   options.setPrintContentOnFailingStatusCode(false);
+				   webClient.setCssErrorHandler(new SilentCssErrorHandler());
+				   return webClient;
+			   }
+		   };
          } else if (browser.equalsIgnoreCase("safari")) {
             driver = new SafariDriver();
          } else {
